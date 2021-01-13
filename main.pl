@@ -15,26 +15,28 @@
 /** ----------------------------------------------- **\
  ** include library script's ...                    **
 \** ----------------------------------------------- **/
-include(zahlen_arabisch).  /* atomic Zahl-Zeichen (arabisch)   */
-include(zahlen_romanisch). /*                     (romanisch)  */
+ensure_loaded('./data/duden_sprachen.pl').   /* verfügbare Sprachen */
 
-include(duden_sprachen).   /* verfügbare Sprachen */
 
-include(planeten).         /* Milchstraße: Planeten (Sonne) */
-include(erde_staat).       /* Erde: Kontinente/Staaten */
-include(erde_staat_einwohner).
+%%ensure_loaded('./data/zahlen_arabisch.pl').  /* atomic Zahl-Zeichen (arabisch)   */
+%%ensure_loaded('./data/zahlen_romanisch.pl'). /*                     (romanisch)  */
 
-include(europa_land).                   /* Europa: Länder       */
-include(europa_land_einwohner).         /*         Population   */
-include(europa_land_hauptstadt).        /*         City         */
-include(europa_land_sprache).           /*         Sprache      */
-include(europa_land_autokennzeichen).   /*         KFZ          */
-include(europa_land_domain).            /*         Internet     */
+%%ensure_loaded(planeten).         /* Milchstraße: Planeten (Sonne) */
+%%ensure_loaded(erde_staat).       /* Erde: Kontinente/Staaten */
+%%ensure_loaded(erde_staat_einwohner).
 
-include(europa_land_de).                /* Deutschland          */
-include(europa_land_nl).                /* Niederlande          */
-include(europa_land_pl).                /* Polen                */
-include(europa_land_cy).                /* Zypern               */
+%%ensure_loaded(europa_land).                   /* Europa: Länder       */
+%%ensure_loaded(europa_land_einwohner).         /*         Population   */
+%%ensure_loaded(europa_land_hauptstadt).        /*         City         */
+%%ensure_loaded(europa_land_sprache).           /*         Sprache      */
+%%ensure_loaded(europa_land_autokennzeichen).   /*         KFZ          */
+%%ensure_loaded(europa_land_domain).            /*         Internet     */
+
+%%ensure_loaded(europa_land_de).                /* Deutschland          */
+%%ensure_loaded(europa_land_nl).                /* Niederlande          */
+%%ensure_loaded(europa_land_pl).                /* Polen                */
+%%ensure_loaded(europa_land_cy).                /* Zypern               */
+
 
 
 /** ----------------------------------------------- **\
@@ -47,6 +49,7 @@ include(europa_land_cy).                /* Zypern               */
 \** ----------------------------------------------- **/
 main :-
     writeln('SWIPL-Prolog Beispiel-Script (c) 2020 by paule32'), nl,
+    get_zahl(null),
     /*
     get_hauptstadt(deutschland), nl,
     get_zahl(drei), nl,
