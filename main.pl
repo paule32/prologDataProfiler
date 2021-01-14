@@ -15,9 +15,11 @@
 /** ----------------------------------------------- **\
  ** include library script's ...                    **
 \** ----------------------------------------------- **/
-ensure_loaded('./data/duden_sprachen.pl').   /* verfügbare Sprachen */
+consult(load.pl).
 
+%%['./data/duden_sprachen.pl'].   /* verfügbare Sprachen */
 
+%%include('./data/zahlen_arabisch.pl').
 %%ensure_loaded('./data/zahlen_arabisch.pl').  /* atomic Zahl-Zeichen (arabisch)   */
 %%ensure_loaded('./data/zahlen_romanisch.pl'). /*                     (romanisch)  */
 
