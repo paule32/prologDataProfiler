@@ -14,24 +14,25 @@ Prolog Parameter:
 ?Name = means "who cares"?
 :Name = stuff related to metapredicate and modules
 
-Zustandstafel:
-S  = 1. Zustand
+Zustandstafel / State table:
+A0 = 1. Zustand / State
 An = n.   -"-
 
-     | S  A1 A2 A3 A4
+     | A0 A1 A2 A3 A4
 -----+----------------
-un   | S  -  -  -  -
+un   | A0 -  -  -  -
 be   | A1 -  -  -  -
 lehr | A2 A2 -  -  -
 bar  | -  -  A3 -  -
 keit | -  -  -  A4 -
 -----+----------------
 
-A1(un).
-A2(be).
-A3(lehr).
-A4(bar).
-A5(keit).
+A0(un).
+A1(be).
+A2(lehr).
+A3(bar).
+A4(keit).
+
 */
 
 /** ----------------------------------------------- **\
