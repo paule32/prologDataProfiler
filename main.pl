@@ -27,6 +27,7 @@
 \** ----------------------------------------------- **/
 main :-
     writeln('SWIPL-Prolog Beispiel-Script (c) 2020 by paule32'), nl,
+    write(deAUlink(a)),nl,
     get_zahl(null),
     /*
     get_hauptstadt(deutschland), nl,

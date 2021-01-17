@@ -8,10 +8,10 @@
 
 /* Wörterbuch-Datei:   Sprache  */
 
-include('./duden_de_letter.pl').  /* lateinische Buchstaben */
+:- consult(source(duden_de_letter)).  /* lateinische Buchstaben */
 
-include('./duden_de.pl').         /* Wortsammlung: deutsch. */
-include('./duden_en.pl').         /*      -"-    : english. */
+:- consult(source(duden_de)).         /* Wortsammlung: deutsch. */
+:- consult(source(duden_en)).         /*      -"-    : english. */
 
 duden(duden_de).	/* Deutsch  */
 duden(duden_en).	/* Englisch */

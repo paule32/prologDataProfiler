@@ -35,6 +35,7 @@ A4(keit).
 
 */
 
+:- consult(source(duden_de_a)).
 
 wort(bad,                           b,a,d).
 wort(bandit,                        b,a,n,d,i,t).
@@ -172,8 +173,9 @@ wort(vorbau,         v,o,r,b,a,u).
 wort(vulkan,         v,u,l,k,a,n).
 wort(vulkanausbruch, v,u,l,k,a,n,a,u,s,b,r,u,c,h).
 wort(vulkane,        v,u,l,k,a,n,e).
-wort(vulkanismuß,    v,u,l,k,a,n,i,s,m,u,ß).
+wort(vulkanismus,    v,u,l,k,a,n,i,s,m,u,s).
 
+/*
 duden_de(wort(afrika),      "Afrika").
 duden_de(wort(amerika),     "Amerika").
 duden_de(wort(amsterdam),   "Amsterdam").
@@ -202,3 +204,4 @@ duden_de(wort(zypern),      "Zypern").
 duden_de(männlich,    "männlich").
 duden_de(weiblich,    "weiblich").
 duden_de(sächlich,    "sächlich").
+*/

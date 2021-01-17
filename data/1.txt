@@ -1,0 +1,34 @@
+/* -------------------------------------- */
+/* de = deutsch                           */
+/*      ST = Silbentrennung               */
+/*      AU = Audio - Link                 */
+/* -------------------------------------- */
+deST(a, "A").
+deST(aachen, "Aa-chen").
+deST(aachener, "Aa-che-ner").
+deST(aachenerin, "Aa-che-ne-rin").
+deST(aal, "Aal").
+
+mp3(X) :- X = "de_" + X + ".mp3", write(X).
+
+deAUlink(X) :- writeln("sss").
+deAU(audios(mp3(aachen))).
+
+deAU(deST000003, audios("de_aachener.mp3")).
+deAU(deST000004, audios("de_aachenerin.mp3")).
+deAU(deST000005, audios("de_aal.mp3")).
+
+
+
+
+
+wort(deST000001, a,a,l).
+wort(deST000002, a,a,c,h,e,n).
+wort(deST000003, a,a,c,h,e,n,e,r).
+wort(deST000004, a,a,c,h,e,n,e,r,i,n).
+
+wort(de000002, abart,          a,b,a,r,t).
+wort(de000003, abbau,          a,b,b,a,u).
+wort(de000004, abbauen,        a,b,b,a,u,e,n).
+wort(de000005, abbaugebiet,    a,b,b,a,u,g,e,b,i,e,t).
+wort(de000006, abblasen,       a,b,b,l,a,s,e,n).
